@@ -43,8 +43,12 @@ function updateCourses(A) {
     var courses = JSON.parse(GM_getValue('dcs_courses', '{}'));
     var learning = [].filter.call(A.languages, function(lang){ return lang.learning; });
     courses[A.ui_language] = learning.map(function(lang){ return _(lang).pick('language', 'level'); });
-    GM_deleteValue('dcs_courses');
-    GM_setValue('dcs_courses', JSON.stringify(courses));
+    try {
+        GM_deleteValue('dcs_courses');
+    }
+    finally {
+        GM_setValue('dcs_courses', JSON.stringify(courses));
+    }
     return courses;
 }
 
