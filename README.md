@@ -1,3 +1,8 @@
+
+# Notice
+
+This script is no longer maintained, since [Duolingo now supports this feature out of the box](https://github.com/arekolek/DuolingoCourseSwitcher/issues/6#issuecomment-310496567), making this script obsolete. 
+
 # Duolingo Course Language Switcher
 
 This userscript for [Duolingo](https://www.duolingo.com/) simplifies switching your UI language. A picture is worth a thousand words:
